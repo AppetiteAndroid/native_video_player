@@ -123,9 +123,9 @@ class NativeVideoPlayerViewController(
 
     override fun seekTo(position: Int) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-            mediaPlayer?.seekTo((position * 1000).toLong(), MediaPlayer.SEEK_CLOSEST)
+            mediaPlayer?.seekTo((position).toLong(), MediaPlayer.SEEK_CLOSEST)
         else
-            videoView.seekTo(position * 1000)
+            videoView.seekTo(position)
     }
 
     override fun setPlaybackSpeed(speed: Double) {
