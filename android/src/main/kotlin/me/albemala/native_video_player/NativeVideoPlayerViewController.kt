@@ -101,7 +101,7 @@ class NativeVideoPlayerViewController(
     }
 
     override fun getPlaybackPosition(): Int {
-        return videoView.currentPosition / 1000
+        return videoView.currentPosition
     }
 
     override fun play() {
