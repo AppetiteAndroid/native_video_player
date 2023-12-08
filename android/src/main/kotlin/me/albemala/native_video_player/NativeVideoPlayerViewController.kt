@@ -96,7 +96,7 @@ class NativeVideoPlayerViewController(
         return VideoInfo(
             mediaPlayer?.videoWidth ?: 0,
             mediaPlayer?.videoHeight ?: 0,
-            videoView.duration / 1000
+            videoView.duration
         )
     }
 
